@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf App - Lintasarta Cloudeka Digischool</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <nav>
+                <span>Bookshelf</span>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="bookSearch">
+            <span>Search Book</span>
+            <div>
+                <form id="search">
+                    <div>
+                        <input id="searchTitle" type="text" placeholder="Title">
+                        <button id="searchSubmit" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section id="bookInsert">
+            <span>Insert Book</span>
+            <div>
+                <form id="insert">
+                    <div>
+                        <input id="insertTitle" type="text" placeholder="Title" required>
+                    </div>
+                    <div>
+                        <input id="insertAuthor" type="text" placeholder="Author" required>
+                    </div>
+                    <div>
+                        <input id="insertYear" type="number" placeholder="Year" required>
+                    </div>
+                    <div>
+                        <label for="insertIsComplete">Completed?</label>
+                        <input id="insertIsComplete" type="checkbox">
+                    </div>
+                    <div id="submit">
+                        <button id="insertSubmit" type="submit">
+                            <i class="bi bi-save"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="bookshelf">
+            <span>Incompleted Books</span>
+            <div id="incompletedBooks">Belum ada</div>
+        </section>
+        <section class="bookshelf">
+            <span>Completed Books</span>
+            <div id="completedBooks"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <span>&copy; 2022</span>
+            <span>Lintasarta Cloudeka Digischool</span>
+        </div>
+    </footer>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
