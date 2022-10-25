@@ -117,6 +117,17 @@ const makeBook = (bookObject) => {
     return article;
 }
 
+const searchBook = () => {
+    const searchTitle = document.getElementById("searchTitle").value;
+    const searchedBook = books.filter(book => book.title.toLowerCase().includes(searchTitle.toLowerCase()));
+    if (searchedBook.length > 0) {
+        alert("Book found!");
+        window.location.href = "#" + searchedBook[0].id;
+    } else {
+        alert("Book not found!");
+    }
+}
+
 const createButton = (buttonTypeClass, buttonIconClass, eventListener) => {
     const button = document.createElement("button");
     const icon = document.createElement("i");
@@ -167,6 +178,13 @@ const findBookIndex = (bookId) => {
     }
     return -1;
 }
+
+const search = document.getElementById("search");
+
+search.addEventListener("submit", function (event) {
+    event.preventDefault();
+    searchBook();
+});
 
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("insert");
