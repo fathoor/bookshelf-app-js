@@ -6,16 +6,16 @@
 ***
 
 ### Preview
-[![Bookshelf App](assets/img/bookshelf.png)](https://bookshelf-app-lintasarta-cloudeka-digischool.vercel.app/)
+[![Bookshelf App](assets/img/bookshelf.png)](https://bookshelf-app-js.vercel.app/)
 
 ### JSON Structure
 ```json
 {
-    id: int,
-    title: string,
-    author: string,
-    year: int,
-    isComplete: boolean,
+    "id": <int>,
+    "title": <string>,
+    "author": <string>,
+    "year": <int>,
+    "isComplete": <boolean>,
 }
 ```
 
